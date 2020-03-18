@@ -1,4 +1,8 @@
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: $heightHeader;
   background-color: white;
   &::after {
@@ -33,4 +37,35 @@
         @include btn;
         background-color: $fontColorGreen;
     }
+    }
   }
+}
+.jumbo {
+  padding: 90px 0;
+  width: $innerWidth;
+  margin: auto;
+  &:after {
+    @include clearFix;
+  }
+  &-text {
+    margin-top: 80px;
+    @include floatLeft;
+    width: 50%;
+    h3 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    ul {
+      margin-left: 20px;
+      line-height: 30px;
+    }
+  }
+  &-image {
+    margin-top: 80px;
+    @include floatRight;
+    width: 40%;
+    img {
+      width: 100%;
+    }
+  }
+}

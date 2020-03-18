@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 // Index
 Route::get('/', 'HomeController@index')->name('home.index');
 Route::get('/privacy', 'HomeController@privacy')->name('home.privacy');
-Route::get('/domande-frequenti', 'HomeController@faq')->name('home.faq');
+Route::get('/faq', 'HomeController@faq')->name('home.faq');
 
 // Studenti
 Route::get('/students', 'StudentController@index')->name('student.index');

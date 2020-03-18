@@ -1,87 +1,31 @@
-* {
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   color: #1A3B57;
-  font-family: sans-serif;
-}
-
-.navbar {
-  height: 90px;
-  background-color: white;
-}
-
-.navbar::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.navbar .logo {
-  width: 20%;
-  float: left;
-  line-height: 90px;
-}
-
-.navbar .logo img {
-  width: 80%;
-  vertical-align: middle;
-}
-
-.navbar .nav-menu {
-  width: 80%;
-  float: right;
-  list-style: none;
-  text-align: right;
-}
-
-.navbar .nav-menu li {
-  display: inline-block;
-  margin: 0 20px;
-  line-height: 100px;
-}
-
-.navbar .nav-menu li a {
-  color: #1B3C59;
-  text-decoration: none;
-}
-
-.navbar .nav-menu li a.active {
-  border-bottom: 2px solid #61CE4E;
-}
-
-.navbar .nav-menu li .btn {
-  background-color: #61CE4E;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  vertical-align: middle;
-}
-
-.navbar .nav-menu li .btn:hover {
-  opacity: .8;
 }
 
 .footer-nav {
-  background: #1B3C59;
+  background: #1A3B57;
   color: white;
   font-weight: bold;
   padding: 60px 120px;
 }
 
 .footer-nav::after {
-  content: '';
   display: table;
+  content: "";
   clear: both;
 }
 
 .footer-nav .footer-logo {
-  width: 15%;
   float: left;
+  width: 20%;
 }
 
 .footer-nav .footer-logo img {
@@ -103,18 +47,113 @@ body {
   text-decoration: none;
 }
 
-main {
-  background-color: #E8EBF1;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-color: white;
 }
 
-main .students {
+.navbar::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.navbar .logo {
+  float: left;
+  width: 20%;
+  line-height: 90px;
+}
+
+.navbar .logo img {
   width: 80%;
+  vertical-align: middle;
+}
+
+.navbar .nav-menu {
+  float: right;
+  width: 80%;
+  list-style: none;
+  text-align: right;
+}
+
+.navbar .nav-menu li {
+  display: inline-block;
+  margin: 0 20px;
+  line-height: 90px;
+}
+
+.navbar .nav-menu li a {
+  color: #1A3B57;
+  text-decoration: none;
+}
+
+.navbar .nav-menu li a.active {
+  border-bottom: 2px solid #61CE4E;
+}
+
+.navbar .nav-menu li .btn {
+  padding: 8px 20px;
+  color: white;
+  border-radius: 5px;
+  vertical-align: middle;
+  background-color: #61CE4E;
+}
+
+.navbar .nav-menu li .btn:hover {
+  opacity: .8;
+}
+
+.jumbo {
+  padding: 90px 0;
+  width: 85%;
+  margin: auto;
+}
+
+.jumbo:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.jumbo-text {
+  margin-top: 80px;
+  float: left;
+  width: 50%;
+}
+
+.jumbo-text h3 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.jumbo-text ul {
+  margin-left: 20px;
+  line-height: 30px;
+}
+
+.jumbo-image {
+  margin-top: 80px;
+  float: right;
+  width: 40%;
+}
+
+.jumbo-image img {
+  width: 100%;
+}
+
+.students {
+  background-color: #E8EBF1;
+  width: 85%;
   margin: 20px auto;
   display: flex;
   flex-wrap: wrap;
 }
 
-main .students .student {
+.students .student {
   width: calc(100% / 2 - 20px);
   margin: 20px 10px;
   padding: 20px;
@@ -124,32 +163,49 @@ main .students .student {
   color: #1B3C59;
 }
 
-main .students .student .info {
+.students .student .info {
   display: inline-flex;
 }
 
-main .students .student .info .image {
+.students .student .info .image {
   width: 20%;
 }
 
-main .students .student .info .image img {
+.students .student .info .image img {
   width: 100%;
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
-main .students .student .info .text {
+.students .student .info .text {
   width: 70%;
   margin-left: 20px;
 }
 
-main .students .student .info .text h3 {
-  font-size: 22px;
+.students .student .info .text h3 {
+  font-size: 24px;
   margin-bottom: 5px;
 }
 
-main .students .student .info .text h4 {
-  font-size: 20px;
+.students .student .info .text h4 {
+  font-size: 22px;
   font-weight: normal;
+}
+
+.privacy {
+  padding: 90px 0;
+  width: 85%;
+  margin: auto;
+  font-size: 16px;
+}
+
+.privacy h2 {
+  margin-bottom: 40px;
+  padding-top: 20px;
+}
+
+.privacy h4 {
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 

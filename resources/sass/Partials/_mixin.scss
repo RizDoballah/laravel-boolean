@@ -10,8 +10,7 @@
   clear: both;
 }
 @mixin btn {
-  display: inline-block;
-  height: 40px;
+  padding: 8px 20px;
   color: white;
   border-radius: 5px;
   vertical-align: middle;
