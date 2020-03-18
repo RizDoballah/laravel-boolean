@@ -2,14 +2,14 @@
 @section('main')
 
   <div class="students">
-    @foreach (config('students.students') as $student)
+    @foreach (config('students.students') as $key => $student)
       <div class="student">
         <div class="info">
           <div class="image">
             <img src="{{$student['img']}}" alt="{{$student['nome']}}">
           </div>
           <div class="text">
-            <h3>{{$student['nome']}} ({{$student['eta']}} anni)</h3>
+            <a href="{{route('student.show', ['id' => $key])}}"><h3>{{$student['nome']}} ({{$student['eta']}} anni)</h3></a>
             <h4>assunt{{($student['genere'] == 'm') ? 'o' : 'a'}} da {{$student['azienda']}} come {{$student['ruolo']}}</h4>
         </div>
         </div>
