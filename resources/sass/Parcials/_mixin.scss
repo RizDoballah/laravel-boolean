@@ -1,0 +1,21 @@
+@mixin floatLeft {
+  float: left;
+}
+@mixin floatRight {
+  float: right;
+}
+@mixin clearFix {
+  display: table;
+  content: "";
+  clear: both;
+}
+@mixin btn {
+  display: inline-block;
+  height: 40px;
+  color: white;
+  border-radius: 5px;
+  vertical-align: middle;
+  &:hover {
+      opacity: .8;
+  }
+}

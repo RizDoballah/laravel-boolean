@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  color: $fontColor;
+}
+.footer-nav {
+  background: $backgroundDark;
+  color: white;
+  font-weight: bold;
+  padding: 60px 120px;
+    &::after {
+      @include clearFix;
+    }
+    .footer-logo {
+      @include floatLeft;
+      width: 20%;
+      img {
+        width: 100%;
+      }
+    }
+    .footer-menu {
+      float: right;
+      text-align: right;
+      list-style: none;
+      li {
+        line-height: 28px;
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }

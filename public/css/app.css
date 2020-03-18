@@ -6,10 +6,12 @@
 
 body {
   font-size: 20px;
+  color: #1A3B57;
+  font-family: sans-serif;
 }
 
 .navbar {
-  height: 100px;
+  height: 90px;
   background-color: white;
 }
 
@@ -22,11 +24,12 @@ body {
 .navbar .logo {
   width: 20%;
   float: left;
+  line-height: 90px;
 }
 
 .navbar .logo img {
-  width: 100%;
-  margin: 15px 10px;
+  width: 80%;
+  vertical-align: middle;
 }
 
 .navbar .nav-menu {

@@ -1,0 +1,36 @@
+.navbar {
+  height: $heightHeader;
+  background-color: white;
+  &::after {
+    @include clearFix;
+  }
+  .logo {
+    @include floatLeft;
+    width: 20%;
+    line-height: $heightHeader;
+    img {
+    width: 80%;
+    vertical-align: middle;
+    }
+  }
+  .nav-menu {
+    @include floatRight;
+    width: 80%;
+    list-style: none;
+    text-align: right;
+    li {
+      display: inline-block;
+      margin: 0 20px;
+      line-height: $heightHeader;
+      a {
+        color: $fontColor;
+        text-decoration: none;
+        &.active {
+          border-bottom: 2px solid $fontColorGreen;
+        }
+      }
+      .btn {
+        @include btn;
+        background-color: $fontColorGreen;
+    }
+  }

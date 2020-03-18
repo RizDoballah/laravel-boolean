@@ -9,7 +9,7 @@ class StudentController extends Controller
   private $students;
   public function __construct()
   {
-    $this-> getAllStudents();
+    $this->students = config('students.students');
   }
   public function index()
     {
@@ -25,8 +25,4 @@ class StudentController extends Controller
       $student = $this->students[$id];
       return view('students.show', compact('student'));
     }
-
-  private function getAllStudents() {
-    $this->students = config('students.students');
-  }
 }
