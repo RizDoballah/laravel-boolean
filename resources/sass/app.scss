@@ -81,3 +81,17 @@ body {
       }
     }
   }
+
+
+
+.students {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #E8EBF1;
+  .student {
+    width: calc(100% / 2 -20px);
+    margin: 20px 10px;
+    padding: 20px;
+    background-color: white;
+  }
+}
