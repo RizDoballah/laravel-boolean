@@ -14,7 +14,7 @@ body {
 }
 
 .navbar::after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -60,7 +60,7 @@ body {
 }
 
 .navbar .nav-menu li .btn:hover {
-  opacity: 0.8;
+  opacity: .8;
 }
 
 .footer-nav {
@@ -71,7 +71,7 @@ body {
 }
 
 .footer-nav::after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -100,16 +100,53 @@ body {
   text-decoration: none;
 }
 
-.students {
-  display: flex;
-  flex-wrap: wrap;
+main {
   background-color: #E8EBF1;
 }
 
-.students .student {
-  width: calc(100% / 2 -20px);
+main .students {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .students .student {
+  width: calc(100% / 2 - 20px);
   margin: 20px 10px;
   padding: 20px;
   background-color: white;
+  border-radius: 5px;
+  box-shadow: 5px 7px 14px 0 #b0b0b0;
+  color: #1B3C59;
+}
+
+main .students .student .info {
+  display: inline-flex;
+}
+
+main .students .student .info .image {
+  width: 20%;
+}
+
+main .students .student .info .image img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+main .students .student .info .text {
+  width: 70%;
+  margin-left: 20px;
+}
+
+main .students .student .info .text h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+main .students .student .info .text h4 {
+  font-size: 20px;
+  font-weight: normal;
 }
 
