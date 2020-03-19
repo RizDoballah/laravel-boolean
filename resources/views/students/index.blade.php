@@ -1,8 +1,16 @@
 @extends('layouts.layout')
 @section('main')
 
+  <select class="filter" name="filter">
+    <option value="all">All</option>
+    @foreach ($genders as $gender)
+      <option value="{{$gender}}">{{($gender) == 'm' ? 'uomo' : 'donna'}}</option>
+    @endforeach
+
+  </select>
+
   <div class="students">
-    @foreach (config('students.students') as $key => $student)
+    @foreach ($students as $key => $student)
       <div class="student">
         <div class="info">
           <div class="image">
@@ -19,5 +27,9 @@
     @endforeach
 
   </div>
+
+@endsection
+@section('scripts')
+  <script src="{{asset('js/app.js')}}" charset="utf-8"></script>
 
 @endsection

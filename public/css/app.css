@@ -156,6 +156,11 @@ body {
   margin-bottom: 20px;
 }
 
+.filter {
+  margin: 100px 60px 40px;
+  padding: 5px 15px;
+}
+
 .students {
   background-color: #E8EBF1;
   width: 85%;

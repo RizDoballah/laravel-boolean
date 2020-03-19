@@ -11,10 +11,12 @@ class HomeController extends Controller
     {
       return view('home.index');
     }
+
   public function privacy()
     {
       return view('home.privacy');
     }
+    
   public function faq()
     {
       return view('home.faq');

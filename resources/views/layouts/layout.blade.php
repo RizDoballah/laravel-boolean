@@ -16,5 +16,6 @@
         @yield('footer')
       </footer>
       {{-- /Footer --}}
+      @yield('scripts')
 
 @include('layouts.partials._footer')
