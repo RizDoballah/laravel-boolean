@@ -161,49 +161,59 @@ body {
   padding: 5px 15px;
 }
 
-.students {
+.container-students {
+  padding-top: 100px;
   background-color: #E8EBF1;
+}
+
+.container-students h2 {
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 36px;
+}
+
+.container-students .students {
   width: 85%;
-  margin: 20px auto;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
 
-.students .student {
+.container-students .students .student {
   width: calc(100% / 2 - 20px);
   margin: 20px 10px;
   padding: 20px;
-  background-color: white;
   border-radius: 5px;
+  background-color: white;
   box-shadow: 5px 7px 14px 0 #b0b0b0;
   color: #1B3C59;
 }
 
-.students .student .info {
+.container-students .students .student .info {
   display: inline-flex;
 }
 
-.students .student .info .image {
+.container-students .students .student .info .image {
   width: 20%;
 }
 
-.students .student .info .image img {
+.container-students .students .student .info .image img {
   width: 100%;
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
-.students .student .info .text {
+.container-students .students .student .info .text {
   width: 70%;
   margin-left: 20px;
 }
 
-.students .student .info .text h3 {
+.container-students .students .student .info .text h3 {
   font-size: 24px;
   margin-bottom: 5px;
 }
 
-.students .student .info .text h4 {
+.container-students .students .student .info .text h4 {
   font-size: 22px;
   font-weight: normal;
 }

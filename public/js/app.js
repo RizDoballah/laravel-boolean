@@ -34977,19 +34977,19 @@ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"
 var Handlebars = __webpack_require__(/*! handlebars */ "./node_modules/handlebars/dist/cjs/handlebars.js");
 
 $(document).ready(function () {
-  // alert('ciao');
+  alert('ciao');
   $('#filter-button').click(function () {
-    var name = $('#name').val();
-    var company = $('#company').val();
-    var role = $('#role').val();
-    var age = $('#age').val();
-    var gender = $('#gender').val();
+    var nome = $('#nome').val();
+    var azienda = $('#azienda').val();
+    var ruolo = $('#ruolo').val();
+    var eta = $('#eta').val();
+    var genere = $('#genere').val();
     var data = {
-      'name': name,
-      'company': company,
-      'role': role,
-      'age': age,
-      'gender': gender
+      'nome': nome,
+      'azienda': azienda,
+      'ruolo': ruolo,
+      'eta': eta,
+      'genere': genere
     };
 
     for (var key in data) {
@@ -35000,10 +35000,19 @@ $(document).ready(function () {
 
     console.log(data);
     $.ajax({
-      'url': 'http://127.0.0.1:88/api/students/filter',
+      'url': 'http://127.0.0.1:8000/api/students/filter',
       'method': 'POST',
       'data': data,
-      'success': function success(data) {},
+      'success': function success(data) {
+        console.log(data); // $('.students').html('');
+        //  var source = $("#entry-template").html();
+        //  var template = Handlebars.compile(source);
+        //  for (var i = 0; i < data.length; i++) {
+        //   var element = data[i];
+        //   var html = template(element);
+        //   $('.students').append(html);
+        // }
+      },
       'error': function error() {
         console.log('error');
       }
